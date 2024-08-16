@@ -37,7 +37,7 @@ function SearchBar(props) {
     // console.log(x)
     let id = x+1;
     // console.log(id)
-    fetch(`http://localhost:4000/products?id=${id}`,
+    fetch(`https://fakestoreapi.com/products?id=${id}`,
       {
         method:'GET'
       }
