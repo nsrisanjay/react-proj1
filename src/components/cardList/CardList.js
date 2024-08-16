@@ -2,7 +2,7 @@ import React, { useEffect } from 'react'
 
 function CardList(props) {
   useEffect(()=>{
-    fetch('http://localhost:4000/products')
+    fetch('https://fakestoreapi.com/products')
     .then(res=>res.json())
     .then(proArray=>console.log(proArray))
   })
