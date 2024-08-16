@@ -16,7 +16,7 @@ function SearchBar(props) {
   }
   // function for filtering card during search
   let fet = function (x) {
-    fetch('http://localhost:4000/products')
+    fetch('https://fakestoreapi.com/products')
       .then(res => res.json())
       .then(proArray => {
         const y = proArray.filter(ele => {
