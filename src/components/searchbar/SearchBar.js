@@ -3,6 +3,7 @@ import React, { useState } from 'react'
 import { useContext } from 'react'
 import { Context } from '../context/Context'
 import {useNavigate} from 'react-router-dom'
+import { useEffect } from 'react'
 function SearchBar(props) {
   let [basket,setBasket] = useContext(Context)
   let [searchtext, setSearchText] = useState('')
@@ -14,6 +15,10 @@ function SearchBar(props) {
   {
     setBasket(x+1)
   }
+  useEffect(() => {
+    fet(' ');
+  }, [])
+  
   // function for filtering card during search
   let fet = function (x) {
     fetch('https://fakestoreapi.com/products')
